@@ -7,10 +7,9 @@ import {
   experimental_wrapLanguageModel as wrapLanguageModel,
 } from "ai";
 import { NextResponse } from "next/server";
-import { z } from "zod";
 
 export async function POST(request: Request) {
-  const { id, messages }: { id: string; messages: Array<Message> } =
+  const { messages }: { id: string; messages: Array<Message> } =
     await request.json();
 
   const coreMessages = convertToCoreMessages(messages).filter(
