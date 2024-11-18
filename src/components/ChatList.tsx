@@ -21,17 +21,17 @@ const ChatList = () => {
           const newId = uuidv4();
           window.location.assign(`/chat/${newId}`);
         }}
-        className="p-2 rounded-lg bg-[#28273d] text-white hover:bg-[#2c2937] transition duration-300"
+        className="p-2 rounded-lg bg-[#474656] text-white hover:bg-[#18171e] transition duration-300"
       >
         Create a new chat
       </button>
       <hr className="border-none h-[2px] bg-gray-300 opacity-10 rounded-md my-5" />
-      <div className="flex flex-col overflow-y-auto scrollbar-hide">
+      <div className="flex flex-col overflow-y-auto scrollbar-hidden">
         {Object.keys(chats).map((key) => (
           <Link
             key={key}
             href={`/chat/${key}`}
-            className="p-2 rounded-lg hover:bg-[#2c2937] transition duration-300 text-gray-300 text-sm"
+            className="no-underline my-2 flex items-center justify-center p-4 px-6 rounded-lg bg-[#474656] text-white text-sm font-medium transition duration-300 transform hover:bg-[#18171e]"
             title={chats[key]?.name}
           >
             {shortenString(chats[key]?.name, 20)}

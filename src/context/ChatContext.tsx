@@ -28,7 +28,6 @@ export const ChatProvider = ({ children }: { children: ReactNode }) => {
     return {};
   });
 
-  // Sync with localStorage whenever chats are updated
   useEffect(() => {
     localStorage.setItem("chats", JSON.stringify(chats));
   }, [chats]);
