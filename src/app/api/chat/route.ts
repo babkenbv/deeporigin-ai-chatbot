@@ -21,7 +21,8 @@ export async function POST(request: Request) {
       model: google("gemini-1.5-flash-latest"),
       middleware: {} as Experimental_LanguageModelV1Middleware,
     }),
-    system: "",
+    system:
+      "You are a chemical expert. When a user asks for equations or tables of properties render them in the chat with a nice markdown",
     messages: coreMessages,
   });
 
