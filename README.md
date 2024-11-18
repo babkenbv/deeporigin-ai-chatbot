@@ -1,36 +1,43 @@
+**Next.js Project**
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm ci
+```
+
+Create .env file form `.env.example`
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Technologies Used**
+Next.js: I chose Next.js because of its fast rendering capabilities, built-in routing, and excellent support for server-side rendering (SSR) and static site generation (SSG), making it ideal for building scalable and SEO-friendly web applications. The built-in API routes also helped streamline the development of backend functionality within the same framework.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+React.js: React is a powerful, component-based library that enables the creation of dynamic and interactive UIs. Its component reusability and virtual DOM optimize the app's performance. Since the project required dynamic user interactions, React was the best choice.
 
-## Learn More
+TypeScript: TypeScript offers type safety and static analysis, which are essential for preventing runtime errors and ensuring code quality, especially in larger projects. It also provides excellent IDE support with features like auto-completion, making the development process smoother and more efficient.
 
-To learn more about Next.js, take a look at the following resources:
+**Why These Technologies?**
+These technologies were chosen due to their flexibility, performance, and scalability. Next.js and React.js are highly suitable for building modern web applications, while TypeScript helps in maintaining code quality and reducing bugs. I am highly skilled with these technologies, which made development faster and more efficient.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Challenges Encountered**
+The most difficult part of this project was time management. I was short on time, and as the development progressed, I encountered several bugs, many of which I initially missed due to exhaustion. These issues delayed my progress, and I had to fix them after deployment. Despite this, I continued to improve the project after it was live, ensuring that it met my standards.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Solutions to Problems**
+To address the challenges, I used a combination of resources:
 
-## Deploy on Vercel
+**Google**: I searched for solutions to specific bugs and issues I encountered during development.
+**AI Assistants**: I leveraged AI assistants to quickly get help with debugging and to explore potential solutions.
+**Personal Knowledge**: I applied my experience and knowledge in Next.js, React, and TypeScript to resolve many issues and optimize the code.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Time Spent**
+I spent approximately **9-10** hours on the task, including development and testing. The development time was longer than expected due to the need to resolve bugs and ensure the application was functioning correctly. However, I focused on improving the project post-deployment to reduce the number of remaining issues.
